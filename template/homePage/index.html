@@ -34,6 +34,14 @@
         <div>
             <img class="home-img" src="{% static 'images/undraw_mobile_payments_re_7udl.svg'%}" alt="home" />
         </div>
+        <div>
+            <h1>My Quote</h1>
+            {% if token %}
+            <p>{{ token }}</p>
+            {% else %}
+            <p>No token generated.</p>
+            {% endif %}
+        </div>
     </div>
   </div>
 </body>
